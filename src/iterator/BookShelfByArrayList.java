@@ -12,10 +12,9 @@ import java.util.ArrayList;
  */
 public class BookShelfByArrayList implements Aggregate {
     private ArrayList <Book> arrayList;
-    private int last = 0;
 
-    public BookShelfByArrayList() {
-        this.arrayList = new ArrayList<>();
+    public BookShelfByArrayList(int initialsize) {
+        this.arrayList = new ArrayList<>(initialsize);
     }
 
     public Book getBookAt(int index) {
@@ -24,11 +23,10 @@ public class BookShelfByArrayList implements Aggregate {
 
     public void appendBook(Book book) {
         this.arrayList.add(book);
-        last++;
     }
 
     public int getLength() {
-        return last;
+        return arrayList.size();
     }
     @Override
     public Iterator iterator() {
