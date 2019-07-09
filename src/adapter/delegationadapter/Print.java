@@ -1,4 +1,4 @@
-package Adapter.extendsAdapter;
+package adapter.delegationadapter;
 
 /**
  * describe 需求 电源的比喻（直流12伏特）
@@ -6,9 +6,9 @@ package Adapter.extendsAdapter;
  * @author JKD
  * @version 1.0.0
  * @ClassName Print.java
- * @createTime 2019年04月26日 13:27:00
+ * @createTime 2019年07月09日 10:08:00
  */
-public interface Print {
+public abstract class Print {
     public abstract void printWeak();
     public abstract void printStrong();
 }

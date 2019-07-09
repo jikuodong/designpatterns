@@ -1,0 +1,4 @@
+java.io.InputStream类中使用了Template Method模式。请阅读官方文档（JDK的API参考资料），从中找出需要用java.io.InputStream的子类去实现的方法。
+
+
+答： 在子类中需要实现的方法是java.io.InputStream的read()方法（不带参数）。

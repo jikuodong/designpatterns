@@ -1,4 +1,7 @@
-package Adapter.extendsAdapter;
+package adapter.delegationadapter;
+
+import adapter.extendsAdapter.Print;
+import adapter.extendsAdapter.PrintBanner;
 
 /**
  * describe 使用者（使用继承的适配器）

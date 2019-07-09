@@ -1,0 +1,13 @@
+在示例程序中生成PrintBanner类的实例时，我们采用可如下方法，即使用Print类型的变量来保存PrintBanner实例。
+
+    Print p = new PrintBanner("Hello");
+
+请问我们为什么不像下面这样使用PrintBanner类型的变量来保存PrintBanner的实例呢？
+
+    PrintBanner p = new PrintBanner("Hello");
+
+
+
+    答： 这是想强调“只使用了Print接口的方法”。在本章的示例中，PrintBanner类和Print接口对外提供的方法是相同的。
+        但是在有些情况下，PrintBanner类中的方法可能会比Print接口中的方法多。
+        通过将对象保存在Print类型的变量中并使用该变量，可以明确地表名程序的意图，即“并不是使用PrintBanner类中的方法，而是使用Print接口中的方法”。

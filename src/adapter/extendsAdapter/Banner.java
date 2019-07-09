@@ -1,4 +1,4 @@
-package Adapter.extendsAdapter;
+package adapter.extendsAdapter;
 
 /**
  * describe 实际情况（电源的比喻：交流100伏特）

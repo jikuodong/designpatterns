@@ -1,4 +1,4 @@
-package Adapter.extendsAdapter;
+package adapter.extendsAdapter;
 
 /**
  * describe 适配器
