@@ -1,7 +1,7 @@
 package Adapter.extendsAdapter;
 
 /**
- * describe
+ * describe 适配器
  *
  * @author JKD
  * @version 1.0.0
