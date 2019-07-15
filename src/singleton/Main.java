@@ -1,5 +1,8 @@
 package singleton;
 
+import java.io.IOException;
+import java.io.InputStream;
+
 /**
  * describe Singleton(单例) 模式main 方法
  *
@@ -12,7 +15,6 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("start");
-
         Singleton singleton1 = Singleton.getInstance();
         Singleton singleton2 = Singleton.getInstance();
         if (singleton1 == singleton2) {

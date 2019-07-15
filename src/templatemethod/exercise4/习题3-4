@@ -1,0 +1,3 @@
+Java 中的接口与抽象类很相似。接口同样也是抽象方法的集合，但是在Template Method模式中，我们却无法使用 接口来扮演AbstractClass 角色，请问这是为什么？
+
+答： 这是因为Template Method模式中的AbstractClass角色必须实现处理的流程。在抽象类中可以实现一部分方法（例如AbstractDisplay 类中的display方法），但是在接口中是无法实现方法的，因此，在TemplateMethod模式中，无法用接口替代抽象类。
