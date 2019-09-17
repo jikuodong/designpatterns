@@ -1,0 +1,19 @@
+在示例程序中，IDCard类（代码清单4-3）的构造函数并不是public,请问这是想表达什么意思呢？
+
+public class IDCard extends Product {
+    ...
+    IDCard(String owner) {
+        ...
+        this.owner = owner;
+    }
+    ...
+}
+
+答：这是因为想让idcard包外的类无法new出IDCard类的实例。这样就可以强迫外部必须通过IDCardFactory 来生成IDCard的实例。
+
+    例如,在Main类（无名包）中，是无法像下面这样生成IDCard的实例的。在编译时，这行代码会报错。
+
+    IDCard IDCard= new IDCard("小明");
+
+
+    补充说明||   在java中，只有同一个包中的类可以访问不带public，protected， private等修饰符的构造函数和方法。

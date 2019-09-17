@@ -1,0 +1,12 @@
+在示例程序中，MessageBox类(代码清单6-3)和UnderlinePen类(代码清单6-4)中的createClone方法的处理相同。
+从管理的角度来讲，在一个程序的多个地方出现完全相同的方法不太好，因此我们想让这两个类共用该方法请问该如何做呢？
+
+
+答： 例如，有以下两种方法。
+
+    1、将Product接口修改为Product类，在Product类中实现createClone方法(Template Method 模式)
+
+    2、定义一个ConcreteProduct类作为UnderlinePen类和MessagePen类的父类，让ConcreteProduct类实现Product接口，并实现createClone方法
+
+
+    不论哪种解决方法，都是通过继承来共用createClone方法。

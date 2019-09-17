@@ -1,0 +1,12 @@
+为了强制调用方向Product类（代码清单4-1）的子类的构造函数中传入"产品名字"作为参数，
+我们采用了如下的定义方式。但是在编译代码时却出现了编译错误，请问这是为什么呢？
+
+
+public abstract class Product {
+    public abstract Product(String name);
+    public abstract void use();
+}
+
+答:这是因为在Java中无法定义abstract的构造函数。在Java 中，构造函数是不会被继承的，因此定义abstract的构造函数没有任何意义。
+
+    要想实现习题中的需求，不应当在构造函数中设置产品的名字，而应当另外声明一个设置产品名字的专用方法。

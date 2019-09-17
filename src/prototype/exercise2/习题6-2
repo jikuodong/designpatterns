@@ -1,0 +1,7 @@
+在java.lang.Object中定义了clone方法，那么请问java.lang.Object类实现了Java.lang.Clonable接口了吗？
+
+
+
+答： 没有，java.lang.Object类并没有实现java.lang.Cloneable接口。
+
+    如果Object类实现了Cloneable接口，那么无论是哪个类的实例调用clone方法，都不会抛出CloneNotSupportedException异常。
