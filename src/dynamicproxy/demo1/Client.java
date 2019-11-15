@@ -4,7 +4,7 @@ import dynamicproxy.demo1.impl.LogHandler;
 import dynamicproxy.demo1.impl.UserManagerImpl;
 
 /**
- * describe
+ * describe 测试端
  *
  * @author JKD
  * @version 1.0.0
